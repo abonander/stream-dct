@@ -1,0 +1,21 @@
+[package]
+name = "stream-dct"
+version = "0.0.1-test"
+authors = ["Austin Bonander <austin.bonander@gmail.com>"]
+
+description = "Discrete Cosine Transform computation with controlled allocations."
+license = "MIT"
+
+keywords = ["dct", "discrete", "cosine", "transform", "math"]
+
+[features]
+simd = ["simdty", "llvmint"]
+cos-approx = []
+
+[dependencies.simdty]
+version = "*"
+optional = true
+
+[dependencies.llvmint]
+version = "*"
+optional = true
